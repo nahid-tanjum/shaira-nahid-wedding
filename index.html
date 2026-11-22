@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="robots" content="noindex"><meta property="og:title" content="Shaira &amp; Nahid · Wedding Invitation"><meta property="og:description" content="Friday 26 March 2027 · Bramleigh Estate, Warrandyte. Tap to open."><meta property="og:image" content="https://nahid-tanjum.github.io/shaira-nahid-wedding/cards/video-poster.jpg"></head><body>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="robots" content="noindex"><meta property="og:title" content="Shaira &amp; Nahid · Wedding Invitation"><meta property="og:description" content="Friday 26 March 2027 · Bramleigh Estate, Warrandyte · Tap to open your invitation"><meta property="og:type" content="website"><meta property="og:image" content="https://nahid-tanjum.github.io/shaira-nahid-wedding/cards/og-cover.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><link rel="preload" href="music.mp3" as="audio"></head><body>
 <meta charset="utf-8">
 <title>Shaira &amp; Nahid Invitation</title>
 <meta name="claude:viewport-fit-sides" content="cover">
@@ -311,6 +311,46 @@ body[data-d="6"] .a3-door{transition:transform 1.6s cubic-bezier(.6,0,.25,1) 1.7
 body[data-d="6"] .a3-glow{transition:opacity 1s ease 2.6s}
 body[data-d="6"] .opened .f7{transition:transform 1.25s cubic-bezier(.6,0,.3,1) .45s, opacity .5s ease 1.3s}
 
+
+/* ===== premium pass ===== */
+.dear{font-family:var(--display);font-size:34px;color:var(--accent);margin:0}
+.verse{font-style:italic;font-size:19px;color:var(--gold);margin:6px 0 0;display:flex;flex-direction:column;gap:2px;line-height:1.4}
+.verse span{font-style:normal;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.cal{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:6px}
+.cal .btn{font-size:13px;padding:10px 16px}
+.guest7{display:none}
+body[data-d="6"] .guest7,body[data-d="7"] .guest7{display:flex;position:absolute;left:0;right:0;top:calc(50% + 86px);z-index:6;flex-direction:column;align-items:center;gap:2px;color:#F3DC9E;text-align:center;transition:opacity .4s ease;padding:0 24px}
+.guest7 span{font-size:12px;letter-spacing:.3em;text-transform:uppercase;opacity:.85}
+.guest7 b{font-family:"Pinyon Script",cursive;font-weight:400;font-size:34px;line-height:1.2}
+.opened .guest7{opacity:0}
+/* idle seal breathing */
+body[data-d="6"] .seal7 b,body[data-d="7"] .seal7 b{animation:breathe7 3.2s ease-in-out infinite}
+@keyframes breathe7{0%,100%{box-shadow:0 10px 24px rgba(30,5,10,.5),0 0 0 0 rgba(243,220,158,.0),inset 0 0 0 9px rgba(120,80,20,.25)}50%{box-shadow:0 10px 24px rgba(30,5,10,.5),0 0 26px 6px rgba(243,220,158,.35),inset 0 0 0 9px rgba(120,80,20,.25)}}
+/* the invitation card that slides out of the envelope */
+.card7{display:none}
+body[data-d="6"] .card7{display:block;position:absolute;left:50%;top:50%;width:min(76vw,320px);aspect-ratio:.7;z-index:1;opacity:0;transform:translate(-50%,-40%) scale(.94);
+  background:#FFF9F0 url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .45  0 0 0 0 .3  0 0 0 0 .2  0 0 0 .08 0'/></filter><rect width='160' height='160' filter='url(%23n)'/></svg>");
+  border-radius:6px;box-shadow:0 24px 50px rgba(30,5,10,.45)}
+.c7in{position:absolute;inset:14px;border:1.5px solid #B8914F;outline:1px solid rgba(184,145,79,.5);outline-offset:-7px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center;padding:16px}
+.c7e{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:#8E1B2A}
+.c7n{font-family:"Pinyon Script",cursive;font-size:clamp(30px,8.6vw,38px);line-height:1.1;color:#8E1B2A;white-space:nowrap}
+.c7r{width:60%;height:1px;background:#B8914F}
+body[data-d="6"] .opened .card7{animation:card7 2.1s cubic-bezier(.5,0,.2,1) .95s forwards}
+@keyframes card7{0%{opacity:0;transform:translate(-50%,-30%) scale(.94)}14%{opacity:1}55%{opacity:1;transform:translate(-50%,-62%) scale(1)}80%{opacity:1;transform:translate(-50%,-62%) scale(1.02)}100%{opacity:0;transform:translate(-50%,-62%) scale(1.12)}}
+/* doors and camera now follow the card */
+body[data-d="6"] .a3-door{transition:transform 1.5s cubic-bezier(.6,0,.25,1) 2.75s}
+body[data-d="6"] .a3-glow{transition:opacity 1s ease 3.4s}
+body[data-d="6"] .op3{transition:transform 1.5s cubic-bezier(.6,0,.3,1) 4.15s, opacity 1s ease 4.5s}
+/* paper grain + slow gold shimmer on the names (design 6) */
+body[data-d="6"] .sec{background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 .9  0 0 0 0 .7  0 0 0 .05 0'/></filter><rect width='160' height='160' filter='url(%23n)'/></svg>")}
+body[data-d="6"] .names{background:linear-gradient(100deg,#B8913F 0%,#EBCB80 30%,#FFF1C2 45%,#EBCB80 60%,#B8913F 100%);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shim7 7s ease-in-out infinite}
+body[data-d="6"] .names .amp{-webkit-text-fill-color:#D9B266}
+@keyframes shim7{0%,100%{background-position:100% 0}50%{background-position:0% 0}}
+/* scroll reveal */
+.rv{opacity:0;transform:translateY(16px);transition:opacity .7s ease, transform .7s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}}
+
 /* site reveal */
 #site > *{transition:opacity .9s ease, transform .9s ease}
 .closed #site > *{opacity:.0001;transform:translateY(14px)}
@@ -430,7 +470,9 @@ body[data-d="6"] .opened .f7{transition:transform 1.25s cubic-bezier(.6,0,.3,1) 
     <div class="op op7" data-tap>
       <div class="f7 l"><i></i></div><div class="f7 r"><i></i></div><div class="f7 b"><i></i></div><div class="f7 t"><i></i></div>
       <div class="seam7"></div><i class="sp7" style="--sx:150px;--sy:0px;animation-delay:0.22s"></i><i class="sp7" style="--sx:162px;--sy:109px;animation-delay:0.26s"></i><i class="sp7" style="--sx:170px;--sy:170px;animation-delay:0.30s"></i><i class="sp7" style="--sx:55px;--sy:280px;animation-delay:0.34s"></i><i class="sp7" style="--sx:0px;--sy:150px;animation-delay:0.38s"></i><i class="sp7" style="--sx:-109px;--sy:162px;animation-delay:0.22s"></i><i class="sp7" style="--sx:-170px;--sy:170px;animation-delay:0.26s"></i><i class="sp7" style="--sx:-280px;--sy:55px;animation-delay:0.30s"></i><i class="sp7" style="--sx:-150px;--sy:0px;animation-delay:0.34s"></i><i class="sp7" style="--sx:-162px;--sy:-109px;animation-delay:0.38s"></i><i class="sp7" style="--sx:-170px;--sy:-170px;animation-delay:0.22s"></i><i class="sp7" style="--sx:-55px;--sy:-280px;animation-delay:0.26s"></i><i class="sp7" style="--sx:-0px;--sy:-150px;animation-delay:0.30s"></i><i class="sp7" style="--sx:109px;--sy:-162px;animation-delay:0.34s"></i><i class="sp7" style="--sx:170px;--sy:-170px;animation-delay:0.38s"></i><i class="sp7" style="--sx:280px;--sy:-55px;animation-delay:0.22s"></i>
+      <div class="card7" aria-hidden="true"><div class="c7in"><div class="c7e">Bismillah</div><div class="c7n">Shaira &amp; Nahid</div><div class="c7r"></div><div class="c7e">Friday · 26 March 2027</div><div class="c7e" style="letter-spacing:.18em">Bramleigh Estate</div></div></div>
       <button class="seal7" type="button" aria-label="Break the seal and open"><b>S&amp;N</b></button>
+      <div class="guest7"><span>Exclusively for</span><b id="guestname">Our Honoured Guests</b></div>
     </div>
 
     <div class="hint">Tap to open</div>
@@ -460,11 +502,14 @@ body[data-d="6"] .opened .f7{transition:transform 1.25s cubic-bezier(.6,0,.3,1) 
     <path d="M22 256 q4 6 8 0 M204 256 q4 6 8 0" stroke="#F3C9CF" stroke-width="1.4" fill="none"/>
   </g>
 </svg></span></div>
+      <p class="dear" id="dear" hidden></p>
+      <p class="small" style="font-size:17px">With the blessings of Allah,</p>
       <p class="host">Mr. Kamrul Hasan Shayok<br>&amp; Mrs. Mowsumi Akter Alo</p>
-      <p class="lead">request the honour of your presence at the wedding reception of their beloved daughter</p>
+      <p class="lead">joyfully request the honour of your presence at the wedding reception of their beloved daughter</p>
       <div class="names">Shaira<span class="amp">with</span>Nahid</div>
       <p class="lead" style="margin:0">Shaira Afrida Oyshee <i>with</i> Nahid Tanjum</p>
       <p class="host">Son of Mr. Amirul Islam<br>&amp; Mrs. Sajeda Islam</p>
+      <p class="verse">“And We created you in pairs.”<span>Surah An-Naba 78:8</span></p>
     </section>
 
 <svg class="garland d7x" viewBox="0 0 340 40" aria-hidden="true"><path d="M20 22 Q90 6 170 20 Q250 6 320 22" stroke="#7E9A72" stroke-width="1.4" fill="none"/><g fill="#7E9A72"><ellipse cx="80" cy="14" rx="9" ry="3.5" transform="rotate(-18 80 14)"/><ellipse cx="120" cy="16" rx="9" ry="3.5" transform="rotate(14 120 16)"/><ellipse cx="220" cy="16" rx="9" ry="3.5" transform="rotate(-14 220 16)"/><ellipse cx="260" cy="14" rx="9" ry="3.5" transform="rotate(18 260 14)"/></g><circle cx="170" cy="20" r="10" fill="#A82738"/><circle cx="152" cy="22" r="7" fill="#C9505E"/><circle cx="188" cy="22" r="7" fill="#C9505E"/><circle cx="170" cy="20" r="4" fill="#8E1B2A"/></svg>
@@ -472,6 +517,8 @@ body[data-d="6"] .opened .f7{transition:transform 1.25s cubic-bezier(.6,0,.3,1) 
       <h2>Save the date</h2>
       <div class="date"><div class="s">Friday</div><div class="d">26</div><div class="s">March 2027</div></div>
       <p class="lead">From half past four in the afternoon</p>
+      <div class="cal"><a class="btn" id="gcal" target="_blank" rel="noopener">Add to Google Calendar</a><button class="btn" id="ical" type="button">Add to Apple / Outlook</button></div>
+      <p class="small" style="margin-top:6px">Counting the days</p>
       <div class="count" id="count" aria-live="off">
         <div><b id="cd-d">–</b><span>Days</span></div><div><b id="cd-h">–</b><span>Hours</span></div><div><b id="cd-m">–</b><span>Mins</span></div><div><b id="cd-s">–</b><span>Secs</span></div>
       </div>
@@ -481,15 +528,15 @@ body[data-d="6"] .opened .f7{transition:transform 1.25s cubic-bezier(.6,0,.3,1) 
         <section class="sec">
       <h2>The evening</h2>
       <ul class="prog">
-        <li><time>4:30 pm</time><i class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#8E1B2A" stroke-width="1.6"><path d="M6 21V5a6 6 0 0 1 12 0v16"/><path d="M3 21h18"/><circle cx="14.5" cy="13" r=".9" fill="#8E1B2A"/></svg></i><span>Guests arrive, welcome drinks</span></li>
-        <li><time>Later</time><i class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#8E1B2A" stroke-width="1.6"><circle cx="9" cy="14" r="5"/><circle cx="15" cy="14" r="5"/><path d="M9 9l1.5-3h-3z"/></svg></i><span>The couple's entrance and family photos</span></li>
-        <li><time>Evening</time><i class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#8E1B2A" stroke-width="1.6"><circle cx="12" cy="13" r="6"/><path d="M3 4v6M5 4v6M4 10v10M21 4c-2 1-2 5 0 6v10"/></svg></i><span>Dinner of Bangladeshi favourites</span></li>
+        <li><time>4:30 pm</time><i class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#8E1B2A" stroke-width="1.6"><path d="M6 21V5a6 6 0 0 1 12 0v16"/><path d="M3 21h18"/><circle cx="14.5" cy="13" r=".9" fill="#8E1B2A"/></svg></i><span>Arrival &amp; welcome drinks</span></li>
+        <li><time>Later</time><i class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#8E1B2A" stroke-width="1.6"><circle cx="9" cy="14" r="5"/><circle cx="15" cy="14" r="5"/><path d="M9 9l1.5-3h-3z"/></svg></i><span>The couple's grand entrance &amp; family photographs</span></li>
+        <li><time>Evening</time><i class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#8E1B2A" stroke-width="1.6"><circle cx="12" cy="13" r="6"/><path d="M3 4v6M5 4v6M4 10v10M21 4c-2 1-2 5 0 6v10"/></svg></i><span>Dinner: a feast of Bangladeshi favourites</span></li>
       </ul>
     </section>
 
 <svg class="garland d7x" viewBox="0 0 340 40" aria-hidden="true"><path d="M20 22 Q90 6 170 20 Q250 6 320 22" stroke="#7E9A72" stroke-width="1.4" fill="none"/><g fill="#7E9A72"><ellipse cx="80" cy="14" rx="9" ry="3.5" transform="rotate(-18 80 14)"/><ellipse cx="120" cy="16" rx="9" ry="3.5" transform="rotate(14 120 16)"/><ellipse cx="220" cy="16" rx="9" ry="3.5" transform="rotate(-14 220 16)"/><ellipse cx="260" cy="14" rx="9" ry="3.5" transform="rotate(18 260 14)"/></g><circle cx="170" cy="20" r="10" fill="#A82738"/><circle cx="152" cy="22" r="7" fill="#C9505E"/><circle cx="188" cy="22" r="7" fill="#C9505E"/><circle cx="170" cy="20" r="4" fill="#8E1B2A"/></svg>
         <section class="sec">
-      <h2>Venue</h2>
+      <h2>The venue</h2>
       <svg class="manor d7x" viewBox="0 0 320 150" fill="none" stroke="#8E1B2A" stroke-width="1.4" aria-hidden="true">
   <path d="M10 140h300"/>
   <path d="M60 140V70h200v70"/><path d="M50 72L160 22l110 50"/><path d="M118 140V96h84v44"/><path d="M118 96l42-24 42 24"/>
@@ -499,28 +546,33 @@ body[data-d="6"] .opened .f7{transition:transform 1.25s cubic-bezier(.6,0,.3,1) 
   <path d="M24 140c-8-20 4-40 14-44 10 4 22 24 14 44M282 140c-8-20 4-40 14-44 10 4 22 24 14 44" stroke="#7E9A72"/>
 </svg>
       <div class="venue">Bramleigh Estate</div>
-      <p class="lead">420 Ringwood–Warrandyte Road<br>Warrandyte, Victoria</p>
+      <p class="lead">420 Ringwood–Warrandyte Road<br>Warrandyte VIC 3113</p>
       <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Bramleigh+Estate+Warrandyte" target="_blank" rel="noopener">Open in Google Maps</a>
     </section>
 
 <svg class="garland d7x" viewBox="0 0 340 40" aria-hidden="true"><path d="M20 22 Q90 6 170 20 Q250 6 320 22" stroke="#7E9A72" stroke-width="1.4" fill="none"/><g fill="#7E9A72"><ellipse cx="80" cy="14" rx="9" ry="3.5" transform="rotate(-18 80 14)"/><ellipse cx="120" cy="16" rx="9" ry="3.5" transform="rotate(14 120 16)"/><ellipse cx="220" cy="16" rx="9" ry="3.5" transform="rotate(-14 220 16)"/><ellipse cx="260" cy="14" rx="9" ry="3.5" transform="rotate(18 260 14)"/></g><circle cx="170" cy="20" r="10" fill="#A82738"/><circle cx="152" cy="22" r="7" fill="#C9505E"/><circle cx="188" cy="22" r="7" fill="#C9505E"/><circle cx="170" cy="20" r="4" fill="#8E1B2A"/></svg>
         <section class="sec">
-      <h2>RSVP</h2>
-      <p class="lead">Kindly reply by 28 February 2027</p>
-      <span class="btn solid" aria-disabled="true">Confirm your presence · link coming soon</span>
+      <h2>Kindly reply</h2>
+      <p class="lead">We would love to celebrate with you. Please let us know you are coming by 28 February 2027.</p>
+      <a class="btn solid" id="rsvp" aria-disabled="true">Confirm your presence</a>
+      <p class="small" id="rsvp-note">RSVP details coming soon</p>
     </section>
 
 <svg class="garland d7x" viewBox="0 0 340 40" aria-hidden="true"><path d="M20 22 Q90 6 170 20 Q250 6 320 22" stroke="#7E9A72" stroke-width="1.4" fill="none"/><g fill="#7E9A72"><ellipse cx="80" cy="14" rx="9" ry="3.5" transform="rotate(-18 80 14)"/><ellipse cx="120" cy="16" rx="9" ry="3.5" transform="rotate(14 120 16)"/><ellipse cx="220" cy="16" rx="9" ry="3.5" transform="rotate(-14 220 16)"/><ellipse cx="260" cy="14" rx="9" ry="3.5" transform="rotate(18 260 14)"/></g><circle cx="170" cy="20" r="10" fill="#A82738"/><circle cx="152" cy="22" r="7" fill="#C9505E"/><circle cx="188" cy="22" r="7" fill="#C9505E"/><circle cx="170" cy="20" r="4" fill="#8E1B2A"/></svg>
         <section class="sec">
       <h2>Dress code</h2>
       <p class="lead">Formal</p>
+      <p class="small">Wear whatever you feel comfortable in.</p>
     </section>
 
 <svg class="garland d7x" viewBox="0 0 340 40" aria-hidden="true"><path d="M20 22 Q90 6 170 20 Q250 6 320 22" stroke="#7E9A72" stroke-width="1.4" fill="none"/><g fill="#7E9A72"><ellipse cx="80" cy="14" rx="9" ry="3.5" transform="rotate(-18 80 14)"/><ellipse cx="120" cy="16" rx="9" ry="3.5" transform="rotate(14 120 16)"/><ellipse cx="220" cy="16" rx="9" ry="3.5" transform="rotate(-14 220 16)"/><ellipse cx="260" cy="14" rx="9" ry="3.5" transform="rotate(18 260 14)"/></g><circle cx="170" cy="20" r="10" fill="#A82738"/><circle cx="152" cy="22" r="7" fill="#C9505E"/><circle cx="188" cy="22" r="7" fill="#C9505E"/><circle cx="170" cy="20" r="4" fill="#8E1B2A"/></svg>
         <section class="sec">
       <div class="rule"><i></i><b></b><i></i></div>
-      <p class="lead" style="font-style:italic">Your presence and duas will make our day complete.</p>
+      <p class="lead" style="font-style:italic">Your presence and duas are the greatest gift to us.</p>
+      <div class="orn" data-motif="rosette" data-size="90" data-sw="1.3" style="width:90px;height:90px"></div>
+      <p class="verse" style="margin-top:0">May Allah bless this union with love, mercy and barakah.</p>
       <div class="names" style="font-size:clamp(44px,12vw,60px)">Shaira &amp; Nahid</div>
+      <p class="small">With love, from both our families</p>
     </section>
     <div class="design-tag" id="dtag"></div>
   </main>
@@ -572,7 +624,7 @@ body[data-d="6"] .opened .f7{transition:transform 1.25s cubic-bezier(.6,0,.3,1) 
 const $=s=>document.querySelector(s);
 const picker=$("#picker"), invite=$("#invite"), opener=$("#opener"), music=$("#music"), muteBtn=$("#mute"), flies=$("#flies");
 const NAMES={1:"Royal Maroon",2:"Indigo Nakshi",3:"Emerald Palace",4:"Fine Line",5:"Golden Butterflies",6:"Red & Gold Palace",7:"Red Envelope"};
-const DUR={1:3300,2:2700,3:3300,4:3800,5:2600,6:4500,7:2500};
+const DUR={1:3300,2:2700,3:3300,4:3800,5:2600,6:5500,7:2500};
 let cur=null, timer=null, wantMusic=true, fromPicker=false;
 
 function route(){
@@ -614,6 +666,45 @@ cardBtns.forEach((b,i)=>b.addEventListener("click",()=>showCard(i)));
 $("#lbx").addEventListener("click",()=>{lb.hidden=true});$("#lbp").addEventListener("click",()=>showCard(ci-1));$("#lbn").addEventListener("click",()=>showCard(ci+1));
 lb.addEventListener("click",e=>{if(e.target===lb)lb.hidden=true});
 document.addEventListener("keydown",e=>{if(lb.hidden)return;if(e.key==="Escape")lb.hidden=true;if(e.key==="ArrowRight")showCard(ci+1);if(e.key==="ArrowLeft")showCard(ci-1)});
+
+
+// ---- guest name from the link (?to=Rahman+Family) ----
+(function(){
+  let to="";
+  try{to=(new URLSearchParams(location.search).get("to")||"").trim().slice(0,60)}catch(e){}
+  if(to){
+    document.getElementById("guestname").textContent=to;
+    const d=document.getElementById("dear"); d.textContent="Dear "+to+","; d.hidden=false;
+  }
+})();
+// ---- add to calendar ----
+(function(){
+  const title="Shaira & Nahid · Wedding Reception", loc="Bramleigh Estate, 420 Ringwood-Warrandyte Road, Warrandyte VIC 3113";
+  const details="With the blessings of Allah, Mr. Kamrul Hasan Shayok & Mrs. Mowsumi Akter Alo request the honour of your presence at the wedding reception of their beloved daughter Shaira with Nahid. Dress code: Formal.";
+  const g=document.getElementById("gcal");
+  g.href="https://calendar.google.com/calendar/render?action=TEMPLATE&text="+encodeURIComponent(title)+"&dates=20270326T163000/20270326T220000&ctz=Australia/Melbourne&location="+encodeURIComponent(loc)+"&details="+encodeURIComponent(details);
+  document.getElementById("ical").addEventListener("click",()=>{
+    const ics=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Shaira & Nahid//Invitation//EN","BEGIN:VEVENT","UID:shaira-nahid-20270326@invite","DTSTAMP:20261123T000000Z",
+      "DTSTART:20270326T053000Z","DTEND:20270326T110000Z","SUMMARY:"+title,"LOCATION:"+loc.replace(/,/g,"\\,"),"DESCRIPTION:"+details.replace(/,/g,"\\,"),"END:VEVENT","END:VCALENDAR"].join("\r\n");
+    const url=URL.createObjectURL(new Blob([ics],{type:"text/calendar"}));
+    const a=document.createElement("a"); a.href=url; a.download="Shaira-Nahid-Wedding.ics"; document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(()=>URL.revokeObjectURL(url),4000);
+  });
+})();
+// ---- RSVP by WhatsApp once a number is set ----
+(function(){
+  const RSVP_NUMBER=""; // e.g. "61426655519"
+  if(!RSVP_NUMBER) return;
+  const r=document.getElementById("rsvp"); r.removeAttribute("aria-disabled");
+  r.href="https://wa.me/"+RSVP_NUMBER+"?text="+encodeURIComponent("Assalamu Alaikum, we would love to attend Shaira & Nahid's wedding reception on 26 March 2027.");
+  r.target="_blank"; document.getElementById("rsvp-note").hidden=true;
+})();
+// ---- gentle scroll reveal ----
+(function(){
+  if(!("IntersectionObserver" in window)) return;
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.15});
+  document.querySelectorAll("#site .sec").forEach((el,i)=>{if(i>0){el.classList.add("rv");io.observe(el)}});
+})();
 
 // countdown to 4:30 pm AEDT, Friday 26 March 2027
 const target=Date.parse("2027-03-26T16:30:00+11:00");
