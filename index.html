@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="robots" content="noindex"><meta property="og:title" content="Shaira &amp; Nahid · Wedding Invitation"><meta property="og:description" content="Friday 26 March 2027 · Bramleigh Estate, Warrandyte. Tap to open."><meta property="og:image" content="https://nahid-tanjum.github.io/shaira-nahid-wedding/cards/video-poster.jpg"></head><body>
+<meta charset="utf-8">
+<title>Shaira &amp; Nahid Invitation</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri&family=Cinzel:wght@500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Great+Vibes&family=Pinyon+Script&display=swap">
+<style>
+/* Layout: a phone-width column. Five themes share one set of content; each theme has its own tap-to-open opener.
+   Each design is a deliberate single look (like printed stationery), so colours are set per theme, not per OS theme. */
+:root{
+  --bg:#F8F3E9; --paper:#FFFDF8; --ink:#3A2A22; --muted:#6E5E54; --accent:#6B2335; --gold:#A8843E; --gold-lt:#E6CB82; --line:#D9C7A3;
+  --display:"Pinyon Script","Great Vibes",cursive; --serif:"Cormorant Garamond",Georgia,serif; --caps:"Cormorant Garamond",Georgia,serif;
+  --pick-bg:#F4EEE4; --pick-ink:#2E2420; --pick-card:#FFFFFF; --pick-line:#E3D8C6;
+  color-scheme:light;
+}
+body{background:var(--pick-bg);color:var(--pick-ink);font-family:var(--serif);font-size:18px;margin:0}
+*{box-sizing:border-box}
+button{font:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+/* ---------- picker ---------- */
+#picker{max-width:1080px;margin:0 auto;padding-block:40px 60px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:28px}
+#picker header{display:flex;flex-direction:column;gap:6px;text-align:center}
+#picker h1{font-family:"Pinyon Script",cursive;font-weight:400;font-size:clamp(44px,8vw,68px);margin:0;color:#6B2335;line-height:1.1}
+#picker .sub{font-size:16px;letter-spacing:.2em;text-transform:uppercase;color:#8A6E3C}
+#picker .note{color:#6E5E54;max-width:60ch;margin:0 auto;font-size:18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.pick{background:var(--pick-card);border:1px solid var(--pick-line);border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:10px;text-align:left;color:inherit;min-width:0}
+.pick:hover{border-color:#B9A27A}
+.thumb{aspect-ratio:9/14;border-radius:8px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.pick b{font-size:19px;font-weight:600}
+.pick span{font-size:15px;color:#6E5E54;line-height:1.35}
+.t1{background:radial-gradient(ellipse at 50% 40%,#F6EEDF,#DCC9A6)}
+.t1 i{width:76%;aspect-ratio:1.45;background:#6B2335;border-radius:5px;position:relative;box-shadow:0 6px 14px rgba(60,30,20,.25)}
+.t1 i::after{content:"";position:absolute;left:50%;top:46%;width:22%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle at 38% 35%,#F2D894,#C9A456 45%,#8C6A2A)}
+.t1 i::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#86304A,#66203A);clip-path:polygon(0 0,100% 0,50% 58%)}
+.t2{background:#EEF1F6}
+.t2 i{width:74%;height:76%;background:#FBFAF6;border:1px solid #C9D3E6;position:relative;background-image:radial-gradient(circle at 30% 30%,rgba(35,57,107,.18) 0 12%,transparent 13%),radial-gradient(circle at 70% 72%,rgba(35,57,107,.18) 0 12%,transparent 13%)}
+.t2 i::before{content:"";position:absolute;left:46%;top:0;bottom:0;width:8%;background:linear-gradient(90deg,#B8BCC6,#F4F5F8,#A4A9B5)}
+.t2 i::after{content:"";position:absolute;left:50%;top:50%;width:40%;height:18%;transform:translate(-50%,-50%);border-radius:40%;border:5px solid #C7CBD4}
+.t3{background:radial-gradient(ellipse at 50% 30%,#1C5447,#0B2C26)}
+.t3 i{width:64%;height:74%;border-radius:50% 50% 4px 4px/34% 34% 4px 4px;border:3px solid #D8BB7A;background:repeating-linear-gradient(45deg,transparent 0 9px,rgba(216,187,122,.55) 9px 10px),repeating-linear-gradient(-45deg,transparent 0 9px,rgba(216,187,122,.55) 9px 10px),#123F36}
+.t4{background:#F3F0EA}
+.t4 svg{width:60%;height:auto}
+.t5{background:radial-gradient(ellipse at 30% 20%,#FBF3E2,#E9D3A8 60%,#CFAE6E)}
+.t5 svg{width:56%;height:auto}
+
+
+.sech{font-family:"Pinyon Script",cursive;font-weight:400;font-size:clamp(34px,6vw,48px);color:#6B2335;margin:0;text-align:center}
+.psec{display:flex;flex-direction:column;gap:14px;border-top:1px solid var(--pick-line);padding-top:28px}
+.pc img{width:100%;height:auto;aspect-ratio:900/1262;border-radius:6px;box-shadow:0 4px 12px rgba(40,25,15,.18);display:block}
+#lb{position:fixed;inset:0;z-index:100;background:rgba(20,14,12,.97);display:flex;align-items:center;justify-content:center;gap:8px;padding:max(16px,env(safe-area-inset-top,0px)) max(8px,env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(8px,env(safe-area-inset-left,0px))}
+#lb[hidden]{display:none!important}
+#lb figure{margin:0;display:flex;flex-direction:column;align-items:center;gap:10px;max-height:100%;min-width:0;flex:1 1 0}
+#lb img{max-width:100%;width:auto;max-height:calc(100vh - 110px);height:auto;object-fit:contain;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+#lb figcaption{color:#F3E6C8;font-size:17px;text-align:center}
+#lb button{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3);color:#fff;border-radius:999px;min-width:44px;height:44px;font-size:22px;flex:none}
+#lbx{position:absolute;top:max(12px,env(safe-area-inset-top,0px));right:max(12px,env(safe-area-inset-right,0px));font-size:15px!important;padding:0 16px}
+
+
+.dl{display:inline-block;background:#6B2335;color:#FFF8EE;text-decoration:none;border-radius:999px;padding:12px 22px;font-weight:600;letter-spacing:.04em}
+.dlist{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px}
+.dlist a{display:block;padding:10px 14px;border:1px solid var(--pick-line);border-radius:10px;background:var(--pick-card);color:#6B2335;text-decoration:none}
+
+/* ---------- invite shell ---------- */
+#invite{position:fixed;inset:0;overflow:hidden;background:var(--bg);color:var(--ink)}
+#invite.scroll{overflow-y:auto}
+#site{max-width:520px;margin:0 auto;padding-block:max(40px,env(safe-area-inset-top,0px)) 120px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:26px}
+.sec{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:34px 22px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:12px;position:relative}
+.sec h2{font-family:var(--caps);font-weight:600;letter-spacing:.28em;text-transform:uppercase;font-size:14px;color:var(--gold);margin:0}
+.ar{font-family:"Amiri",serif;font-size:30px;color:var(--gold);direction:rtl;line-height:1.6}
+.small{font-size:16px;color:var(--muted);font-style:italic;line-height:1.4}
+.names{font-family:var(--display);font-size:clamp(58px,17vw,84px);line-height:1;color:var(--accent);margin:4px 0}
+.names .amp{display:block;font-family:var(--serif);font-style:italic;font-size:.45em;color:var(--gold);line-height:1.1}
+.lead{font-size:20px;line-height:1.45;margin:0;max-width:30ch}
+.date{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:14px;width:100%}
+.date .s{border-top:1px solid var(--gold);border-bottom:1px solid var(--gold);padding:8px 0;text-transform:uppercase;letter-spacing:.2em;font-size:14px;font-weight:600;color:var(--accent)}
+.date .d{font-size:72px;font-weight:600;line-height:1;color:var(--accent);font-variant-numeric:lining-nums}
+.count{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;width:100%}
+.count div{border:1px solid var(--line);border-radius:10px;padding:10px 4px;display:flex;flex-direction:column;gap:2px}
+.count b{font-size:28px;font-weight:600;color:var(--accent);font-variant-numeric:tabular-nums lining-nums}
+.count span{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.prog{list-style:none;margin:0;padding:0;width:100%;display:flex;flex-direction:column;gap:0}
+.prog li{display:grid;grid-template-columns:92px 1fr;gap:12px;text-align:left;padding:12px 0;border-bottom:1px dashed var(--line)}
+.prog li:last-child{border-bottom:none}
+.prog time{font-weight:600;color:var(--accent);font-variant-numeric:lining-nums}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;padding:12px 22px;border:1px solid var(--accent);color:var(--accent);background:transparent;text-decoration:none;font-weight:600;letter-spacing:.08em;font-size:15px}
+.btn.solid{background:var(--accent);color:var(--paper)}
+.btn[aria-disabled="true"]{opacity:.55;cursor:default}
+.venue{font-family:var(--caps);font-size:26px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:600;line-height:1.25}
+.orn{width:120px;height:120px}
+.rule{display:flex;align-items:center;gap:12px}
+.rule i{display:block;width:70px;height:1px;background:var(--gold)}
+.rule b{display:block;width:8px;height:8px;transform:rotate(45deg);background:var(--gold)}
+#chrome{position:fixed;top:max(12px,env(safe-area-inset-top,0px));left:max(12px,env(safe-area-inset-left,0px));right:max(12px,env(safe-area-inset-right,0px));display:flex;justify-content:space-between;z-index:50;pointer-events:none}
+#chrome button{pointer-events:auto;background:rgba(255,255,255,.82);border:1px solid rgba(0,0,0,.12);color:#2E2420;border-radius:999px;padding:8px 14px;font-size:14px;backdrop-filter:blur(6px)}
+.design-tag{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);text-align:center}
+
+/* ---------- opener (shared) ---------- */
+#opener{position:fixed;inset:0;z-index:20;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;transition:opacity .8s ease, visibility 0s linear .8s;perspective:1400px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+#opener.done{opacity:0;visibility:hidden;pointer-events:none}
+.op{display:none;position:relative}
+.hint{font-size:15px;letter-spacing:.3em;text-transform:uppercase;animation:pulse 1.8s ease-in-out infinite;text-align:center}
+.opened .hint{animation:none;opacity:0;transition:opacity .3s}
+.optitle{text-align:center;display:flex;flex-direction:column;gap:4px;transition:opacity .5s, transform .5s}
+.optitle .e{font-size:14px;letter-spacing:.32em;text-transform:uppercase}
+.optitle .n{font-family:var(--display);font-size:clamp(40px,12vw,58px);line-height:1.1}
+.opened .optitle{opacity:0;transform:translateY(-16px)}
+@keyframes pulse{0%,100%{opacity:.45}50%{opacity:1}}
+@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* ===== Design 1: Royal Maroon envelope ===== */
+body[data-d="1"] #invite{--bg:#F3EBDD;--paper:#FFFDF8;--ink:#3A2A22;--muted:#6E5E54;--accent:#6B2335;--gold:#A8843E;--line:#E2D3B5}
+body[data-d="1"] #opener{background:radial-gradient(ellipse at 50% 42%,#F7F0E3 0%,#E9DBC0 70%,#DCC9A6 100%);color:#7E5F24}
+body[data-d="1"] .op1{display:block}
+.op1{width:min(86vw,440px);aspect-ratio:1.45}
+.e1-back{position:absolute;inset:0;background:#6B2335;border-radius:8px;box-shadow:0 18px 40px rgba(60,30,20,.3)}
+.e1-liner{position:absolute;left:4%;right:4%;top:4%;height:55%;background:#F8F3E9;border-radius:4px;background-image:radial-gradient(circle,rgba(168,132,62,.35) 0 2px,transparent 3px);background-size:18px 18px}
+.e1-card{position:absolute;left:7%;right:7%;background:#FFFDF8;border-radius:4px;box-shadow:0 8px 20px rgba(60,30,20,.2);transition:transform 1.3s cubic-bezier(.6,0,.2,1) 1.6s;display:flex;flex-direction:column;align-items:center;padding-top:16%;gap:4px;outline:1px solid #A8843E;outline-offset:-10px}
+.e1-card .n{font-family:"Pinyon Script",cursive;font-size:clamp(30px,8vw,42px);color:#6B2335;line-height:1.05}
+.e1-card .e{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:#A8843E}
+.e1-front{position:absolute;inset:0;border-radius:8px;background:linear-gradient(180deg,#7A2A3E,#5E1D2D);clip-path:polygon(0 0,50% 58%,100% 0,100% 100%,0 100%)}
+.e1-front svg{position:absolute;inset:0;width:100%;height:100%}
+.e1-addr{position:absolute;left:0;right:0;bottom:9%;text-align:center;font-family:"Pinyon Script",cursive;font-size:clamp(26px,7vw,36px);color:#E6CB82}
+.e1-flap{position:absolute;left:0;top:0;width:100%;height:63%;background:linear-gradient(180deg,#86304A,#66203A);clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:50% 0;transition:transform 1s cubic-bezier(.6,0,.3,1) .55s, z-index 0s linear 1.05s;z-index:3;border-radius:8px 8px 0 0}
+.e1-seal{position:absolute;left:50%;top:63%;width:23%;aspect-ratio:1;transform:translate(-50%,-50%);z-index:4;border:none;padding:0;background:none}
+.e1-seal i{position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at 38% 35%,#F2D894 0%,#C9A456 45%,#8C6A2A 100%);box-shadow:0 6px 14px rgba(40,20,10,.35),inset 0 0 0 5px rgba(126,95,36,.45);display:flex;align-items:center;justify-content:center;font-family:"Pinyon Script",cursive;font-size:clamp(20px,5.4vw,28px);color:#6E5220;font-style:normal;transition:transform .6s ease-in, opacity .6s ease-in}
+.e1-seal i:first-child{clip-path:polygon(0 0,52% 0,46% 40%,54% 60%,48% 100%,0 100%)}
+.e1-seal i:last-child{clip-path:polygon(52% 0,100% 0,100% 100%,48% 100%,54% 60%,46% 40%)}
+.opened .e1-seal i:first-child{transform:translate(-40%,70%) rotate(-35deg);opacity:0}
+.opened .e1-seal i:last-child{transform:translate(40%,75%) rotate(32deg);opacity:0}
+.opened .e1-flap{transform:rotateX(178deg);z-index:0}
+.e1-cardwrap{position:absolute;left:0;right:0;bottom:6%;height:260%;overflow:hidden;z-index:1}
+.e1-cardwrap .e1-card{bottom:0;height:52%;transform:translateY(36%)}
+.opened .e1-cardwrap .e1-card{transform:translateY(-32%)}
+.e1-front{z-index:2}
+
+/* ===== Design 2: Indigo nakshi gate-fold with ribbon ===== */
+body[data-d="2"] #invite{--bg:#EEF1F6;--paper:#FCFBF8;--ink:#1F2A44;--muted:#57627A;--accent:#23396B;--gold:#9A8A5A;--line:#CDD6E6;--display:"Great Vibes",cursive}
+body[data-d="2"] #opener{background:linear-gradient(180deg,#F3F5F9,#DDE3EE);color:#23396B}
+body[data-d="2"] .op2{display:block}
+.op2{width:min(78vw,380px);aspect-ratio:.68;transform-style:preserve-3d}
+.g2-inner{position:absolute;inset:0;background:#FCFBF8;border:1px solid #C9D3E6;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;text-align:center;padding:20px}
+.g2-inner .n{font-family:"Great Vibes",cursive;font-size:clamp(30px,8.5vw,44px);color:#23396B;line-height:1.05}
+.g2-inner .e{font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:#57627A}
+.g2-door{position:absolute;top:0;bottom:0;width:50%;background:#FBFAF6;border:1px solid #C9D3E6;transition:transform 1.4s cubic-bezier(.6,0,.25,1) .9s;overflow:hidden;box-shadow:inset 0 0 0 10px #FBFAF6,inset 0 0 0 11px #23396B}
+.g2-door.l{left:0;transform-origin:0 50%}
+.g2-door.r{right:0;transform-origin:100% 50%}
+.g2-door .pat{position:absolute;inset:16px}
+.opened .g2-door.l{transform:rotateY(-112deg)}
+.opened .g2-door.r{transform:rotateY(112deg)}
+.g2-rib{position:absolute;background:linear-gradient(90deg,#AEB3BF,#F6F7FA 45%,#C2C6D0 60%,#9CA1AD);z-index:3;transition:transform .7s ease-in .3s, opacity .7s ease-in .3s}
+.g2-rib.v{left:47%;width:6%;top:-2%;bottom:-2%}
+.g2-rib.h{top:47%;height:6%;left:-2%;right:-2%;background:linear-gradient(180deg,#AEB3BF,#F6F7FA 45%,#C2C6D0 60%,#9CA1AD)}
+.g2-bow{position:absolute;left:50%;top:50%;width:62%;transform:translate(-50%,-50%);z-index:4;transition:transform .6s ease-in, opacity .6s ease-in;border:none;background:none;padding:0}
+.opened .g2-bow{transform:translate(-50%,-50%) scale(.3) rotate(25deg);opacity:0}
+.opened .g2-rib.v{transform:translateY(-110%);opacity:0}
+.opened .g2-rib.h{transform:translateX(110%);opacity:0}
+
+/* ===== Design 3: Emerald jamdani palace doors ===== */
+body[data-d="3"] #invite{--bg:#0E2E28;--paper:#123A33;--ink:#F3E9D2;--muted:#C9BC9C;--accent:#E7CD8E;--gold:#D8BB7A;--line:#2F5C51;--display:"Pinyon Script",cursive;--caps:"Cinzel",serif}
+body[data-d="3"] #opener{background:radial-gradient(ellipse at 50% 35%,#1C5447 0%,#0B2C26 75%);color:#E7CD8E}
+body[data-d="3"] .op3{display:block}
+.op3{width:min(74vw,360px);aspect-ratio:.62;transition:transform 1.4s cubic-bezier(.6,0,.3,1) 2s, opacity .9s ease 2.4s}
+.a3-frame{position:absolute;inset:-14px;border-radius:50% 50% 6px 6px/30% 30% 6px 6px;border:3px solid #D8BB7A;box-shadow:0 0 0 6px #0E2E28,0 0 0 8px rgba(216,187,122,.6)}
+.a3-portal{position:absolute;inset:0;border-radius:50% 50% 4px 4px/30% 30% 4px 4px;overflow:hidden;background:radial-gradient(ellipse at 50% 60%,#FFF6DD 0%,#F2DDA4 35%,#B88F45 80%);perspective:900px;display:flex;align-items:center;justify-content:center}
+.a3-glow{text-align:center;color:#5A3D12;display:flex;flex-direction:column;gap:6px;opacity:0;transition:opacity 1s ease 1.2s}
+.a3-glow .n{font-family:"Pinyon Script",cursive;font-size:clamp(38px,10vw,50px);line-height:1.05}
+.a3-glow .e{font-family:"Cinzel",serif;font-size:12px;letter-spacing:.3em}
+.opened .a3-glow{opacity:1}
+.a3-door{position:absolute;top:0;bottom:0;width:50%;background:repeating-linear-gradient(45deg,transparent 0 13px,rgba(216,187,122,.55) 13px 14px),repeating-linear-gradient(-45deg,transparent 0 13px,rgba(216,187,122,.55) 13px 14px),radial-gradient(circle,rgba(216,187,122,.7) 0 2px,transparent 3px) 0 0/19.8px 19.8px,#134A3F;transition:transform 1.5s cubic-bezier(.6,0,.25,1) .3s;box-shadow:inset 0 0 0 6px #0F3B33,inset 0 0 0 8px #D8BB7A}
+.a3-door.l{left:0;transform-origin:0 50%}
+.a3-door.r{right:0;transform-origin:100% 50%}
+.a3-door::after{content:"";position:absolute;top:52%;width:16px;height:16px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#F7E3A8,#B8913F);box-shadow:0 2px 4px rgba(0,0,0,.4)}
+.a3-door.l::after{right:12px}.a3-door.r::after{left:12px}
+.opened .a3-door.l{transform:rotateY(-105deg)}
+.opened .a3-door.r{transform:rotateY(105deg)}
+.opened .op3{transform:scale(2.6);opacity:0}
+
+/* ===== Design 4: Minimal line art, folded card ===== */
+body[data-d="4"] #invite{--bg:#F1EEE8;--paper:#FAF8F4;--ink:#1F1D1B;--muted:#6B655E;--accent:#1F1D1B;--gold:#8C7A5B;--line:#DDD6CA;--display:"Great Vibes",cursive}
+body[data-d="4"] #opener{background:#ECE8E0;color:#3A3530}
+body[data-d="4"] .op4{display:block}
+.op4{width:min(76vw,360px);aspect-ratio:.7;transform-style:preserve-3d}
+.f4-inside{position:absolute;inset:0;background:#FAF8F4;box-shadow:0 14px 34px rgba(40,30,20,.18);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:20px;text-align:center}
+.f4-inside svg{width:52%;height:auto}
+.f4-inside svg path{fill:none;stroke:#1F1D1B;stroke-width:1.6;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1}
+.opened .f4-inside svg path{transition:stroke-dashoffset 2.2s ease-in-out 1s;stroke-dashoffset:0}
+.f4-inside .n{font-family:"Great Vibes",cursive;font-size:clamp(34px,9vw,44px);line-height:1.1;opacity:0;transition:opacity 1s ease 2.4s}
+.opened .f4-inside .n{opacity:1}
+.f4-cover{position:absolute;inset:0;transform-origin:0 50%;transition:transform 1.4s cubic-bezier(.6,0,.25,1) .2s;transform-style:preserve-3d;z-index:2}
+.f4-cover .face{position:absolute;inset:0;backface-visibility:hidden;background:#F7F4EE;box-shadow:0 14px 34px rgba(40,30,20,.18);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center;padding:24px}
+.f4-cover .face .n{font-family:"Great Vibes",cursive;font-size:clamp(40px,11vw,54px);color:#1F1D1B;line-height:1.05}
+.f4-cover .face .e{font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:#6B655E}
+.f4-cover .back{transform:rotateY(180deg);background:#EFEBE3}
+.opened .f4-cover{transform:rotateY(-170deg)}
+.paper{background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.35  0 0 0 0 0.3  0 0 0 0 0.25  0 0 0 .07 0'/></filter><rect width='160' height='160' filter='url(%23n)'/></svg>")}
+
+/* ===== Design 5: Golden butterflies ===== */
+body[data-d="5"] #invite{--bg:#F5EBD8;--paper:#FFFBF3;--ink:#4A3720;--muted:#7A6548;--accent:#8A6526;--gold:#B08A3E;--line:#E7D5B0;--display:"Great Vibes",cursive}
+body[data-d="5"] #opener{background:radial-gradient(ellipse at 25% 20%,#FFF7E6 0%,transparent 45%),radial-gradient(ellipse at 80% 75%,rgba(214,176,98,.55) 0%,transparent 50%),linear-gradient(160deg,#F8EBD2,#E6CC98 55%,#D3B06A);color:#7A5A1E}
+body[data-d="5"] .op5{display:block}
+.op5{width:min(80vw,380px);aspect-ratio:.66}
+.b5-card{position:absolute;inset:0;border-radius:10px;background:linear-gradient(135deg,#FFFBF2,#F3E4C2);box-shadow:0 16px 40px rgba(90,60,20,.25);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;padding:20px;outline:1px solid rgba(176,138,62,.6);outline-offset:-12px}
+.b5-card .n{font-family:"Great Vibes",cursive;font-size:clamp(40px,11vw,54px);line-height:1.05;background:linear-gradient(100deg,#7E5F24,#C9A456 40%,#F4E2A4 50%,#B08A3E 65%,#7E5F24);-webkit-background-clip:text;background-clip:text;color:transparent}
+.b5-card .e{font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:#7A6548}
+.b5-veil{position:absolute;left:-2%;right:-2%;height:51%;z-index:3;background:linear-gradient(115deg,#C9A456,#F2DC9C 30%,#B8913F 55%,#EBD08A 80%,#A77E33);transition:transform 1.2s cubic-bezier(.6,0,.3,1) 1s;box-shadow:0 4px 18px rgba(90,60,20,.25)}
+.b5-veil.t{top:-1%;border-radius:10px 10px 0 0}
+.b5-veil.b{bottom:-1%;border-radius:0 0 10px 10px}
+.opened .b5-veil.t{transform:translateY(-120%)}
+.opened .b5-veil.b{transform:translateY(120%)}
+.b5-emb{position:absolute;left:50%;top:50%;width:34%;transform:translate(-50%,-50%);z-index:4;border:none;background:none;padding:0;transition:opacity .4s ease .2s}
+.opened .b5-emb{opacity:0}
+.fly{position:fixed;left:50%;top:50%;width:96px;filter:drop-shadow(0 4px 6px rgba(90,60,20,.35));z-index:30;pointer-events:none;opacity:0}
+.fly .w{transform-origin:50% 50%;animation:flap .22s ease-in-out infinite alternate}
+@keyframes flap{from{transform:scaleX(1)}to{transform:scaleX(.25)}}
+.opened .fly{animation:flyout 2.6s cubic-bezier(.3,.1,.3,1) forwards}
+@keyframes flyout{0%{opacity:0;transform:translate(-50%,-50%) scale(.4)}12%{opacity:1}100%{opacity:0;transform:translate(calc(-50% + var(--x)),calc(-50% + var(--y))) scale(1.1) rotate(var(--r))}}
+
+
+/* ===== Design 6: Red & gold palace (Emerald Palace in traditional bridal red) ===== */
+body[data-d="6"] #invite{--bg:#4E0A14;--paper:#62101D;--ink:#F7E8C8;--muted:#E2C9A0;--accent:#EBCB80;--gold:#D9B266;--line:#7E2532;--display:"Pinyon Script",cursive;--caps:"Cinzel",serif}
+body[data-d="6"] #opener{background:radial-gradient(ellipse at 50% 35%,#8E1B2A 0%,#4A0812 75%);color:#EBCB80}
+body[data-d="6"] .op3{display:block}
+body[data-d="6"] .a3-frame{border-color:#D9B266;box-shadow:0 0 0 6px #4E0A14,0 0 0 8px rgba(217,178,102,.65)}
+body[data-d="6"] .a3-door{background:repeating-linear-gradient(45deg,transparent 0 13px,rgba(217,178,102,.6) 13px 14px),repeating-linear-gradient(-45deg,transparent 0 13px,rgba(217,178,102,.6) 13px 14px),radial-gradient(circle,rgba(217,178,102,.75) 0 2px,transparent 3px) 0 0/19.8px 19.8px,#8A1626;box-shadow:inset 0 0 0 6px #5E0D19,inset 0 0 0 8px #D9B266}
+body[data-d="6"] .a3-glow{color:#6A1420}
+.t6{background:radial-gradient(ellipse at 50% 30%,#8E1B2A,#4A0812)}
+.t6 i{width:64%;height:74%;border-radius:50% 50% 4px 4px/34% 34% 4px 4px;border:3px solid #D9B266;background:repeating-linear-gradient(45deg,transparent 0 9px,rgba(217,178,102,.6) 9px 10px),repeating-linear-gradient(-45deg,transparent 0 9px,rgba(217,178,102,.6) 9px 10px),#8A1626}
+
+
+.host{font-family:var(--caps);font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:15px;color:var(--accent);line-height:1.5;margin:0}
+.arch7{display:none}
+/* ===== Design 7: Red envelope (Instagram flow, in red) ===== */
+body[data-d="7"] #invite{--bg:#F6ECE6;--paper:#FFFAF6;--ink:#4A2A2E;--muted:#7D5E60;--accent:#8E1B2A;--gold:#B8914F;--line:#EAD6CF;--display:"Pinyon Script",cursive}
+body[data-d="7"] #opener{background:#6A0F1C;padding:0}
+body[data-d="7"] .op7{display:block}
+body[data-d="7"] .optitle,body[data-d="7"] .hint{position:absolute;z-index:6;left:0;right:0;color:#F3DC9E}
+body[data-d="7"] .optitle{top:max(70px,env(safe-area-inset-top,0px))}
+body[data-d="7"] .hint{top:calc(max(70px,env(safe-area-inset-top,0px)) + 92px);bottom:auto;margin-top:0}
+.op7{position:fixed;inset:0;perspective:1600px}
+.f7{position:absolute;inset:0;transition:transform 1.3s cubic-bezier(.6,0,.3,1) .5s, opacity .6s ease 1.4s;backface-visibility:hidden}
+.f7 i{position:absolute;inset:0}
+.f7.t i{clip-path:polygon(0 0,100% 0,50% 50%);background:linear-gradient(180deg,#9A2434,#7A1626)}
+.f7.b i{clip-path:polygon(0 100%,100% 100%,50% 50%);background:linear-gradient(0deg,#6A0F1C,#82192A)}
+.f7.l i{clip-path:polygon(0 0,0 100%,50% 50%);background:linear-gradient(90deg,#7E1728,#8E1E2F)}
+.f7.r i{clip-path:polygon(100% 0,100% 100%,50% 50%);background:linear-gradient(270deg,#7E1728,#8E1E2F)}
+.f7.t{transform-origin:50% 0;z-index:4}.f7.b{transform-origin:50% 100%;z-index:3}.f7.l{transform-origin:0 50%;z-index:2}.f7.r{transform-origin:100% 50%;z-index:2}
+.seam7{position:absolute;inset:0;z-index:5;pointer-events:none;background:linear-gradient(to bottom right,transparent calc(50% - 1px),rgba(243,220,158,.35) 50%,transparent calc(50% + 1px)),linear-gradient(to bottom left,transparent calc(50% - 1px),rgba(243,220,158,.35) 50%,transparent calc(50% + 1px));transition:opacity .4s}
+.seal7{position:absolute;left:50%;top:50%;width:124px;height:124px;transform:translate(-50%,-50%);z-index:6;border:none;padding:0;background:none;transition:transform .6s ease, opacity .6s ease}
+.seal7 b{position:absolute;inset:0;border-radius:47% 53% 50% 50%/52% 48% 52% 48%;background:radial-gradient(circle at 38% 34%,#FBE7AE 0%,#D9B266 45%,#9C7330 100%);box-shadow:0 8px 18px rgba(30,5,10,.45),inset 0 0 0 9px rgba(120,80,20,.25);display:flex;align-items:center;justify-content:center;font-family:"Pinyon Script",cursive;font-size:44px;color:#6A0F1C;font-weight:400}
+.seal7 b::after{content:"";position:absolute;inset:16px;border-radius:50%;border:2px solid rgba(106,15,28,.35)}
+.opened .seal7{transform:translate(-50%,-50%) scale(1.25);opacity:0}
+.opened .seam7{opacity:0}
+.opened .f7.t{transform:rotateX(178deg)}.opened .f7.b{transform:rotateX(-178deg)}.opened .f7.l{transform:rotateY(-178deg)}.opened .f7.r{transform:rotateY(178deg)}
+.opened .f7{opacity:0}
+.d7x{display:none}
+body[data-d="7"] .d7x{display:block}
+body[data-d="7"] .arch7{display:block;width:250px;height:320px;border-radius:125px 125px 8px 8px;border:2px solid var(--gold);padding:8px;margin:4px 0 6px}
+body[data-d="7"] .arch7 span{display:block;width:100%;height:100%;border-radius:117px 117px 4px 4px;overflow:hidden}
+body[data-d="7"] .arch7 svg{display:block;width:100%;height:100%}
+body[data-d="7"] .sec{border:none;box-shadow:0 1px 0 var(--line),0 10px 30px rgba(106,15,28,.06)}
+body[data-d="7"] .garland{width:100%;max-width:340px;height:auto;margin:-6px auto -10px}
+body[data-d="7"] .prog{position:relative}
+body[data-d="7"] .prog::before{content:"";position:absolute;left:118px;top:14px;bottom:14px;width:1px;background:var(--line)}
+body[data-d="7"] .prog li{grid-template-columns:92px 36px 1fr;border-bottom:none;padding:12px 0;align-items:center}
+body[data-d="7"] .prog li time{grid-column:1;grid-row:1;text-align:right}
+body[data-d="7"] .prog li .ico{display:flex;grid-column:2;grid-row:1;width:34px;height:34px;border-radius:50%;background:#FFFAF6;border:1px solid var(--gold);align-items:center;justify-content:center;position:relative;z-index:1}
+body[data-d="7"] .prog li .ico svg{width:20px;height:20px}
+body[data-d="7"] .prog li span{grid-column:3;grid-row:1}
+.prog li .ico{display:none}
+body[data-d="7"] .manor{width:100%;max-width:320px;height:auto;margin:4px auto}
+body[data-d="7"] #mute{border-radius:50%;background:#8E1B2A;color:#F3DC9E;border-color:#8E1B2A;position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:max(16px,env(safe-area-inset-bottom,0px));top:auto;left:auto}
+.t7{background:linear-gradient(160deg,#9A2434,#6A0F1C);position:relative}
+.t7::before{content:"";position:absolute;inset:0;background:linear-gradient(to bottom right,transparent calc(50% - 1px),rgba(243,220,158,.4) 50%,transparent calc(50% + 1px)),linear-gradient(to bottom left,transparent calc(50% - 1px),rgba(243,220,158,.4) 50%,transparent calc(50% + 1px))}
+.t7 i{width:34%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 38% 34%,#FBE7AE,#D9B266 45%,#9C7330);box-shadow:0 4px 10px rgba(30,5,10,.45);position:relative}
+
+#mute{width:40px;height:40px;padding:0!important;display:flex;align-items:center;justify-content:center;font-size:16px!important}
+#mute[hidden]{display:none!important}
+#back[hidden]{display:none!important}
+/* "Tap to open" sits right under the names, above the card */
+#opener .optitle{order:0}
+#opener .hint{order:1;margin-top:-10px}
+#opener .op{order:2}
+body[data-d="7"] .hint{top:calc(max(70px,env(safe-area-inset-top,0px)) + 92px);bottom:auto;margin-top:0}
+/* site reveal */
+#site > *{transition:opacity .9s ease, transform .9s ease}
+.closed #site > *{opacity:.0001;transform:translateY(14px)}
+</style>
+
+<div id="picker">
+  <header>
+    <div class="sub">Wedding invitation</div>
+    <h1>Shaira &amp; Nahid</h1>
+    <p class="note">Online invitation, printed card, video and print files, all in one place. Pick your favourites below.</p>
+    <p style="margin:6px 0 0"><button id="pmusic" class="dl" type="button" style="border:none">▶ Play the music</button></p>
+  </header>
+  <h2 class="sech">Online invitation · 7 designs</h2>
+  <p class="note">Each one opens when you tap it, then guests scroll through the date, programme, venue and RSVP.</p>
+  <div class="grid">
+    <button class="pick" data-go="1"><div class="thumb t1"><i></i></div><b>1 · Royal Maroon</b><span>Maroon envelope with a gold wax seal. Tap the seal, the flap opens and the card slides out.</span></button>
+    <button class="pick" data-go="2"><div class="thumb t2"><i></i></div><b>2 · Indigo Nakshi</b><span>Gate-fold card tied with a satin ribbon and indigo nakshi flowers. Tap the bow and the doors swing open.</span></button>
+    <button class="pick" data-go="3"><div class="thumb t3"><i></i></div><b>3 · Emerald Palace</b><span>Arched palace doors with a gold jamdani lattice. Tap and the doors open into golden light.</span></button>
+    <button class="pick" data-go="4"><div class="thumb t4"><svg viewBox="0 0 300 500"><path d="M150 480 C140 400 170 330 150 250 M150 250 C120 230 100 190 105 150 C125 180 140 210 150 250 M150 250 C145 210 150 170 165 130 C172 175 165 215 150 250 M150 250 C175 225 200 200 215 165 C205 205 185 235 150 250" fill="none" stroke="#1F1D1B" stroke-width="3"/></svg></div><b>4 · Fine Line</b><span>Minimal folded card. Tap, it opens like a book and a single-line flower draws itself.</span></button>
+    <button class="pick" data-go="5"><div class="thumb t5"><svg viewBox="0 0 100 80"><path d="M50 40 C30 5 5 10 10 30 C14 45 35 45 50 40 C35 50 20 72 34 74 C44 75 49 58 50 40 C51 58 56 75 66 74 C80 72 65 50 50 40 C65 45 86 45 90 30 C95 10 70 5 50 40Z" fill="#B08A3E"/></svg></div><b>5 · Golden Butterflies</b><span>Champagne gold card. Tap, butterflies fly out and the gold veil lifts.</span></button>
+    <button class="pick" data-go="6"><div class="thumb t6"><i></i></div><b>6 · Red &amp; Gold Palace</b><span>The palace doors in traditional bridal red and gold. Tap and the doors open into golden light.</span></button>
+    <button class="pick" data-go="7"><div class="thumb t7"><i></i></div><b>7 · Red Envelope</b><span>Your Instagram reference in red: a full-screen red envelope with a gold wax seal. Tap the seal, the four flaps fold open, then a swan arch scene, timeline, venue sketch and RSVP.</span></button>
+  </div>
+
+  <section class="psec" id="printed">
+    <h2 class="sech">Printed card · 19 designs</h2>
+    <p class="note">A5 cards (148 × 210 mm) to print with gold foil and hand out. Same wording on all of them them, laid out like a traditional walima card. Grey text in [brackets] is still to fill in: the RSVP contacts. Tap a card to see it large.</p>
+    <div class="grid pgrid"><button class="pick pc" data-card="19"><img src="cards/p19.jpg?v=4" alt="Printed card design 19: Red & Gold Palace" loading="lazy" width="900" height="1262"><b>19 · Red &amp; Gold Palace</b><span>Matches the chosen online invitation</span></button><button class="pick pc" data-card="1"><img src="cards/p1.jpg?v=4" alt="Printed card design 1: Rose & Gold Heritage" loading="lazy" width="900" height="1262"><b>1 · Rose &amp; Gold Heritage</b></button><button class="pick pc" data-card="2"><img src="cards/p2.jpg?v=4" alt="Printed card design 2: Royal Bengali Red" loading="lazy" width="900" height="1262"><b>2 · Royal Bengali Red</b></button><button class="pick pc" data-card="3"><img src="cards/p3.jpg?v=4" alt="Printed card design 3: Emerald Palace" loading="lazy" width="900" height="1262"><b>3 · Emerald Palace</b><span>Bride's favourite concept</span></button><button class="pick pc" data-card="4"><img src="cards/p4.jpg?v=4" alt="Printed card design 4: Modern Ivory Prestige" loading="lazy" width="900" height="1262"><b>4 · Modern Ivory Prestige</b></button><button class="pick pc" data-card="5"><img src="cards/p5.jpg?v=4" alt="Printed card design 5: Bengal Alpana Luxe" loading="lazy" width="900" height="1262"><b>5 · Bengal Alpana Luxe</b></button><button class="pick pc" data-card="6"><img src="cards/p6.jpg?v=4" alt="Printed card design 6: Mughal Garden" loading="lazy" width="900" height="1262"><b>6 · Mughal Garden</b></button><button class="pick pc" data-card="7"><img src="cards/p7.jpg?v=4" alt="Printed card design 7: Champagne Botanical" loading="lazy" width="900" height="1262"><b>7 · Champagne Botanical</b></button><button class="pick pc" data-card="8"><img src="cards/p8.jpg?v=4" alt="Printed card design 8: Jamdani Royal Weave" loading="lazy" width="900" height="1262"><b>8 · Jamdani Royal Weave</b></button><button class="pick pc" data-card="9"><img src="cards/p9.jpg?v=4" alt="Printed card design 9: Midnight Royal" loading="lazy" width="900" height="1262"><b>9 · Midnight Royal</b></button><button class="pick pc" data-card="10"><img src="cards/p10.jpg?v=4" alt="Printed card design 10: Palace Garden Ivory" loading="lazy" width="900" height="1262"><b>10 · Palace Garden Ivory</b><span>ChatGPT's #1 pick</span></button><button class="pick pc" data-card="11"><img src="cards/p11.jpg?v=4" alt="Printed card design 11: Garden Walima" loading="lazy" width="900" height="1262"><b>11 · Garden Walima</b><span>Closest to your reference</span></button><button class="pick pc" data-card="12"><img src="cards/p12.jpg?v=4" alt="Printed card design 12: Shapla & Rose" loading="lazy" width="900" height="1262"><b>12 · Shapla &amp; Rose</b><span>Roses + Bangladeshi alpana</span></button><button class="pick pc" data-card="13"><img src="cards/p13.jpg?v=4" alt="Printed card design 13: Arch & Autumn Leaves" loading="lazy" width="900" height="1262"><b>13 · Arch &amp; Autumn Leaves</b><span>Shaira's pick</span></button><button class="pick pc" data-card="14"><img src="cards/p14.jpg?v=4" alt="Printed card design 14: Bengal Folk Border" loading="lazy" width="900" height="1262"><b>14 · Bengal Folk Border</b><span>Shaira's pick</span></button><button class="pick pc" data-card="15"><img src="cards/p15.jpg?v=4" alt="Printed card design 15: Velvet Cartouche" loading="lazy" width="900" height="1262"><b>15 · Velvet Cartouche</b><span>Shaira's pick</span></button><button class="pick pc" data-card="16"><img src="cards/p16.jpg?v=4" alt="Printed card design 16: Checkerboard Palace" loading="lazy" width="900" height="1262"><b>16 · Checkerboard Palace</b><span>Shaira's pick</span></button><button class="pick pc" data-card="17"><img src="cards/p17.jpg?v=4" alt="Printed card design 17: Red Bloom Vine" loading="lazy" width="900" height="1262"><b>17 · Red Bloom Vine</b><span>Shaira's pick</span></button><button class="pick pc" data-card="18"><img src="cards/p18.jpg?v=4" alt="Printed card design 18: Mughal Tiles" loading="lazy" width="900" height="1262"><b>18 · Mughal Tiles</b><span>Shaira's pick</span></button></div>
+  </section>
+
+  <section class="psec" id="video">
+    <h2 class="sech">Video invitation</h2>
+    <p class="note">36 seconds, red &amp; gold palace, for WhatsApp, Instagram and Facebook. Tap play, or download it and send it as a file.</p>
+    <video src="video.mp4?v=red2" controls playsinline preload="metadata" poster="cards/video-poster.jpg?v=red" style="width:min(100%,360px);margin:0 auto;display:block;border-radius:10px;box-shadow:0 6px 18px rgba(40,25,15,.25)"></video>
+    <p style="text-align:center;margin:0"><a class="dl" href="video.mp4" download>Download the video (MP4, 8 MB)</a></p>
+  </section>
+  <section class="psec" id="files">
+    <h2 class="sech">Print files</h2>
+    <p class="note">A5 with 3 mm bleed, 300 dpi, ready for the printer. Send the printer only the design you choose.</p>
+    <p style="text-align:center;margin:0"><a class="dl" href="files/all-19-printed-cards.pdf" download>Download all 19 designs (PDF)</a></p>
+    <ul class="dlist"><li><a href="files/card-19-red-and-gold-palace.pdf" download>19 · Red &amp; Gold Palace</a></li><li><a href="files/card-01-rose-and-gold-heritage.pdf" download>1 · Rose &amp; Gold Heritage</a></li><li><a href="files/card-02-royal-bengali-red.pdf" download>2 · Royal Bengali Red</a></li><li><a href="files/card-03-emerald-palace.pdf" download>3 · Emerald Palace</a></li><li><a href="files/card-04-modern-ivory-prestige.pdf" download>4 · Modern Ivory Prestige</a></li><li><a href="files/card-05-bengal-alpana-luxe.pdf" download>5 · Bengal Alpana Luxe</a></li><li><a href="files/card-06-mughal-garden.pdf" download>6 · Mughal Garden</a></li><li><a href="files/card-07-champagne-botanical.pdf" download>7 · Champagne Botanical</a></li><li><a href="files/card-08-jamdani-royal-weave.pdf" download>8 · Jamdani Royal Weave</a></li><li><a href="files/card-09-midnight-royal.pdf" download>9 · Midnight Royal</a></li><li><a href="files/card-10-palace-garden-ivory.pdf" download>10 · Palace Garden Ivory</a></li><li><a href="files/card-11-garden-walima.pdf" download>11 · Garden Walima</a></li><li><a href="files/card-12-shapla-and-rose.pdf" download>12 · Shapla &amp; Rose</a></li><li><a href="files/card-13-arch-and-autumn-leaves.pdf" download>13 · Arch &amp; Autumn Leaves</a></li><li><a href="files/card-14-bengal-folk-border.pdf" download>14 · Bengal Folk Border</a></li><li><a href="files/card-15-velvet-cartouche.pdf" download>15 · Velvet Cartouche</a></li><li><a href="files/card-16-checkerboard-palace.pdf" download>16 · Checkerboard Palace</a></li><li><a href="files/card-17-red-bloom-vine.pdf" download>17 · Red Bloom Vine</a></li><li><a href="files/card-18-mughal-tiles.pdf" download>18 · Mughal Tiles</a></li></ul>
+  </section>
+  <div id="lb" hidden><button id="lbx" type="button" aria-label="Close">Close ✕</button><button id="lbp" type="button" aria-label="Previous card">‹</button><figure><img id="lbimg" alt=""><figcaption id="lbcap"></figcaption></figure><button id="lbn" type="button" aria-label="Next card">›</button></div>
+</div>
+
+<div id="invite" class="closed" hidden>
+  <div id="chrome"><button id="back" type="button">← All designs</button><button id="mute" type="button" aria-label="Play music" hidden>♪</button></div>
+
+  <div id="opener">
+    <div class="optitle"><div class="e">Wedding Invitation</div><div class="n">Shaira &amp; Nahid</div></div>
+
+    <!-- 1 -->
+    <div class="op op1" data-tap>
+      <div class="e1-back"><div class="e1-liner"></div></div>
+      <div class="e1-cardwrap"><div class="e1-card"><div class="e">Wedding Invitation</div><div class="n">Shaira</div><div class="e" style="font-family:var(--serif);font-size:18px;letter-spacing:0;font-style:italic;text-transform:none">&amp;</div><div class="n">Nahid</div><div class="e">26 · 03 · 2027</div></div></div>
+      <div class="e1-front"><svg viewBox="0 0 440 303" preserveAspectRatio="none"><path d="M8,8 L220,170 L432,8" fill="none" stroke="#C9A456" stroke-width="1.6" opacity=".8"/><rect x="8" y="8" width="424" height="287" fill="none" stroke="#C9A456" stroke-width="1" opacity=".55"/></svg><div class="e1-addr">Shaira &amp; Nahid</div></div>
+      <div class="e1-flap"></div>
+      <button class="e1-seal" type="button" aria-label="Break the seal and open"><i>S&amp;N</i><i>S&amp;N</i></button>
+    </div>
+
+    <!-- 2 -->
+    <div class="op op2" data-tap>
+      <div class="g2-inner"><div class="e">Wedding Invitation</div><div data-motif="rosette" data-size="120" data-stroke="#23396B" data-sw="1.4" style="width:120px;height:120px"></div><div class="n">Shaira &amp; Nahid</div><div class="e">Friday 26 March 2027</div></div>
+      <div class="g2-door l"><div class="pat" data-pattern="indigo"></div></div>
+      <div class="g2-door r"><div class="pat" data-pattern="indigo"></div></div>
+      <div class="g2-rib v"></div><div class="g2-rib h"></div>
+      <button class="g2-bow" type="button" aria-label="Untie the ribbon and open">
+        <svg viewBox="0 0 200 120"><defs><linearGradient id="sat" x1="0" x2="1"><stop offset="0" stop-color="#9CA1AD"/><stop offset=".45" stop-color="#F6F7FA"/><stop offset=".7" stop-color="#C2C6D0"/><stop offset="1" stop-color="#8E94A2"/></linearGradient></defs>
+          <path d="M100 60 C70 20 20 10 18 40 C16 70 70 75 100 60Z" fill="url(#sat)" stroke="#8E94A2"/>
+          <path d="M100 60 C130 20 180 10 182 40 C184 70 130 75 100 60Z" fill="url(#sat)" stroke="#8E94A2"/>
+          <path d="M96 64 L70 116 L84 110 L92 118 L100 66Z" fill="url(#sat)" stroke="#8E94A2"/>
+          <path d="M104 64 L130 116 L116 110 L108 118 L100 66Z" fill="url(#sat)" stroke="#8E94A2"/>
+          <ellipse cx="100" cy="60" rx="14" ry="12" fill="url(#sat)" stroke="#8E94A2"/></svg>
+      </button>
+    </div>
+
+    <!-- 3 -->
+    <div class="op op3" data-tap>
+      <div class="a3-frame"></div>
+      <div class="a3-portal">
+        <div class="a3-glow"><div class="e">Bismillah</div><div class="n">Shaira &amp; Nahid</div><div class="e">26 · III · 2027</div></div>
+        <button class="a3-door l" type="button" aria-label="Open the doors"></button>
+        <button class="a3-door r" type="button" aria-label="Open the doors"></button>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="op op4" data-tap>
+      <div class="f4-inside paper">
+        <svg viewBox="0 0 300 500" aria-hidden="true">
+          <path pathLength="1" d="M150 480 C140 400 170 330 150 250"/>
+          <path pathLength="1" d="M150 390 C110 372 88 340 80 305 C112 316 140 345 150 390"/>
+          <path pathLength="1" d="M152 335 C190 305 210 262 214 205"/>
+          <path pathLength="1" d="M214 205 C203 183 208 162 221 146 C232 164 230 186 214 205"/>
+          <path pathLength="1" d="M150 250 C120 230 100 190 105 150 C125 180 140 210 150 250"/>
+          <path pathLength="1" d="M150 250 C145 210 150 170 165 130 C172 175 165 215 150 250"/>
+          <path pathLength="1" d="M150 250 C175 225 200 200 215 165 C205 205 185 235 150 250"/>
+          <path pathLength="1" d="M150 250 C128 240 108 236 92 218 C118 222 138 232 150 250"/>
+          <path pathLength="1" d="M150 250 L141 205 M150 250 L157 200 M150 250 L168 210"/>
+        </svg>
+        <div class="n">Shaira &amp; Nahid</div>
+      </div>
+      <button class="f4-cover" type="button" aria-label="Open the card">
+        <div class="face paper"><div class="e">Together with their families</div><div class="n">Shaira<br>&amp; Nahid</div><div class="e">26 · 03 · 2027</div></div>
+        <div class="face back paper"></div>
+      </button>
+    </div>
+
+    <!-- 5 -->
+    <div class="op op5" data-tap>
+      <div class="b5-card"><div class="e">Wedding Invitation</div><div class="n">Shaira<br>&amp; Nahid</div><div class="e">Friday 26 March 2027</div></div>
+      <div class="b5-veil t"></div><div class="b5-veil b"></div>
+      <button class="b5-emb" type="button" aria-label="Open the invitation"><svg viewBox="0 0 100 80"><path d="M50 40 C30 5 5 10 10 30 C14 45 35 45 50 40 C35 50 20 72 34 74 C44 75 49 58 50 40 C51 58 56 75 66 74 C80 72 65 50 50 40 C65 45 86 45 90 30 C95 10 70 5 50 40Z" fill="#FFF6DA" stroke="#7E5F24" stroke-width="1.2"/><path d="M50 28 L50 56" stroke="#7E5F24" stroke-width="2"/></svg></button>
+    </div>
+
+    <!-- 7 -->
+    <div class="op op7" data-tap>
+      <div class="f7 l"><i></i></div><div class="f7 r"><i></i></div><div class="f7 b"><i></i></div><div class="f7 t"><i></i></div>
+      <div class="seam7"></div>
+      <button class="seal7" type="button" aria-label="Break the seal and open"><b>S&amp;N</b></button>
+    </div>
+
+    <div class="hint">Tap to open</div>
+  </div>
+
+  <main id="site">
+    <section class="sec">
+      <div class="ar">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
+      <div class="small">In the name of Allah, the Most Gracious, the Most Merciful</div>
+      <div class="orn" data-motif="rosette" data-size="120" data-sw="1.4"></div>
+      <div class="arch7" aria-hidden="true"><span><svg viewBox="0 0 234 304" aria-hidden="true">
+  <defs><linearGradient id="sky7" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF4EC"/><stop offset=".55" stop-color="#F6D9D2"/><stop offset="1" stop-color="#E8B9B2"/></linearGradient>
+  <linearGradient id="pond7" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9C6C0"/><stop offset="1" stop-color="#D7A7A2"/></linearGradient></defs>
+  <rect width="234" height="304" fill="url(#sky7)"/>
+  <circle cx="117" cy="78" r="26" fill="#FFFDF8" opacity=".9"/><circle cx="117" cy="78" r="40" fill="#FFFDF8" opacity=".25"/>
+  <ellipse cx="117" cy="236" rx="150" ry="44" fill="url(#pond7)"/>
+  <path d="M30 224 Q117 214 204 224" stroke="#FFFDF8" stroke-width="1.2" fill="none" opacity=".7"/>
+  <g fill="#FFFDF8" stroke="#B8914F" stroke-width="1.2">
+    <path d="M70 214 C70 198 92 192 108 200 C112 182 100 168 104 152 C108 138 126 138 124 152 C120 160 114 164 112 172 C110 186 116 200 112 214 C98 224 76 224 70 214Z"/>
+    <path d="M164 214 C164 198 142 192 126 200 C122 182 134 168 130 152 C126 138 108 138 110 152 C114 160 120 164 122 172 C124 186 118 200 122 214 C136 224 158 224 164 214Z"/>
+  </g>
+  <path d="M124 150 l8 3 -8 2z" fill="#C9702A"/><path d="M110 150 l-8 3 8 2z" fill="#C9702A"/>
+  <g>
+    <circle cx="26" cy="262" r="16" fill="#A82738"/><circle cx="48" cy="276" r="13" fill="#C9505E"/><circle cx="14" cy="284" r="12" fill="#8E1B2A"/>
+    <circle cx="208" cy="262" r="16" fill="#A82738"/><circle cx="186" cy="276" r="13" fill="#C9505E"/><circle cx="220" cy="284" r="12" fill="#8E1B2A"/>
+    <ellipse cx="62" cy="292" rx="16" ry="6" fill="#7E9A72" transform="rotate(-20 62 292)"/><ellipse cx="172" cy="292" rx="16" ry="6" fill="#7E9A72" transform="rotate(20 172 292)"/>
+    <path d="M22 256 q4 6 8 0 M204 256 q4 6 8 0" stroke="#F3C9CF" stroke-width="1.4" fill="none"/>
+  </g>
+</svg></span></div>
+      <p class="host">Mr. Kamrul Hasan Shayok<br>&amp; Mrs. Mowsumi Akter Alo</p>
+      <p class="lead">request the honour of your presence at the wedding reception of their beloved daughter</p>
+      <div class="names">Shaira<span class="amp">with</span>Nahid</div>
+      <p class="lead" style="margin:0">Shaira Afrida Oyshee <i>with</i> Nahid Tanjum</p>
+      <p class="host">Son of Mr. Amirul Islam<br>&amp; Mrs. Sajeda Islam</p>
+    </section>
+
+<svg class="garland d7x" viewBox="0 0 340 40" aria-hidden="true"><path d="M20 22 Q90 6 170 20 Q250 6 320 22" stroke="#7E9A72" stroke-width="1.4" fill="none"/><g fill="#7E9A72"><ellipse cx="80" cy="14" rx="9" ry="3.5" transform="rotate(-18 80 14)"/><ellipse cx="120" cy="16" rx="9" ry="3.5" transform="rotate(14 120 16)"/><ellipse cx="220" cy="16" rx="9" ry="3.5" transform="rotate(-14 220 16)"/><ellipse cx="260" cy="14" rx="9" ry="3.5" transform="rotate(18 260 14)"/></g><circle cx="170" cy="20" r="10" fill="#A82738"/><circle cx="152" cy="22" r="7" fill="#C9505E"/><circle cx="188" cy="22" r="7" fill="#C9505E"/><circle cx="170" cy="20" r="4" fill="#8E1B2A"/></svg>
+        <section class="sec">
+      <h2>Save the date</h2>
+      <div class="date"><div class="s">Friday</div><div class="d">26</div><div class="s">March 2027</div></div>
+      <p class="lead">From half past four in the afternoon</p>
+      <div class="count" id="count" aria-live="off">
+        <div><b id="cd-d">–</b><span>Days</span></div><div><b id="cd-h">–</b><span>Hours</span></div><div><b id="cd-m">–</b><span>Mins</span></div><div><b id="cd-s">–</b><span>Secs</span></div>
+      </div>
+    </section>
+
+<svg class="garland d7x" viewBox="0 0 340 40" aria-hidden="true"><path d="M20 22 Q90 6 170 20 Q250 6 320 22" stroke="#7E9A72" stroke-width="1.4" fill="none"/><g fill="#7E9A72"><ellipse cx="80" cy="14" rx="9" ry="3.5" transform="rotate(-18 80 14)"/><ellipse cx="120" cy="16" rx="9" ry="3.5" transform="rotate(14 120 16)"/><ellipse cx="220" cy="16" rx="9" ry="3.5" transform="rotate(-14 220 16)"/><ellipse cx="260" cy="14" rx="9" ry="3.5" transform="rotate(18 260 14)"/></g><circle cx="170" cy="20" r="10" fill="#A82738"/><circle cx="152" cy="22" r="7" fill="#C9505E"/><circle cx="188" cy="22" r="7" fill="#C9505E"/><circle cx="170" cy="20" r="4" fill="#8E1B2A"/></svg>
+        <section class="sec">
+      <h2>The evening</h2>
+      <ul class="prog">
+        <li><time>4:30 pm</time><i class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#8E1B2A" stroke-width="1.6"><path d="M6 21V5a6 6 0 0 1 12 0v16"/><path d="M3 21h18"/><circle cx="14.5" cy="13" r=".9" fill="#8E1B2A"/></svg></i><span>Guests arrive, welcome drinks</span></li>
+        <li><time>Later</time><i class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#8E1B2A" stroke-width="1.6"><circle cx="9" cy="14" r="5"/><circle cx="15" cy="14" r="5"/><path d="M9 9l1.5-3h-3z"/></svg></i><span>The couple's entrance and family photos</span></li>
+        <li><time>Evening</time><i class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#8E1B2A" stroke-width="1.6"><circle cx="12" cy="13" r="6"/><path d="M3 4v6M5 4v6M4 10v10M21 4c-2 1-2 5 0 6v10"/></svg></i><span>Dinner of Bangladeshi favourites</span></li>
+      </ul>
+    </section>
+
+<svg class="garland d7x" viewBox="0 0 340 40" aria-hidden="true"><path d="M20 22 Q90 6 170 20 Q250 6 320 22" stroke="#7E9A72" stroke-width="1.4" fill="none"/><g fill="#7E9A72"><ellipse cx="80" cy="14" rx="9" ry="3.5" transform="rotate(-18 80 14)"/><ellipse cx="120" cy="16" rx="9" ry="3.5" transform="rotate(14 120 16)"/><ellipse cx="220" cy="16" rx="9" ry="3.5" transform="rotate(-14 220 16)"/><ellipse cx="260" cy="14" rx="9" ry="3.5" transform="rotate(18 260 14)"/></g><circle cx="170" cy="20" r="10" fill="#A82738"/><circle cx="152" cy="22" r="7" fill="#C9505E"/><circle cx="188" cy="22" r="7" fill="#C9505E"/><circle cx="170" cy="20" r="4" fill="#8E1B2A"/></svg>
+        <section class="sec">
+      <h2>Venue</h2>
+      <svg class="manor d7x" viewBox="0 0 320 150" fill="none" stroke="#8E1B2A" stroke-width="1.4" aria-hidden="true">
+  <path d="M10 140h300"/>
+  <path d="M60 140V70h200v70"/><path d="M50 72L160 22l110 50"/><path d="M118 140V96h84v44"/><path d="M118 96l42-24 42 24"/>
+  <path d="M128 140v-40M144 140v-40M176 140v-40M192 140v-40"/>
+  <g stroke-width="1.1"><rect x="72" y="84" width="22" height="26"/><rect x="226" y="84" width="22" height="26"/><path d="M83 84v26M72 97h22M237 84v26M226 97h22"/>
+  <rect x="150" y="40" width="20" height="20" rx="10"/></g>
+  <path d="M24 140c-8-20 4-40 14-44 10 4 22 24 14 44M282 140c-8-20 4-40 14-44 10 4 22 24 14 44" stroke="#7E9A72"/>
+</svg>
+      <div class="venue">Bramleigh Estate</div>
+      <p class="lead">420 Ringwood–Warrandyte Road<br>Warrandyte, Victoria</p>
+      <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Bramleigh+Estate+Warrandyte" target="_blank" rel="noopener">Open in Google Maps</a>
+    </section>
+
+<svg class="garland d7x" viewBox="0 0 340 40" aria-hidden="true"><path d="M20 22 Q90 6 170 20 Q250 6 320 22" stroke="#7E9A72" stroke-width="1.4" fill="none"/><g fill="#7E9A72"><ellipse cx="80" cy="14" rx="9" ry="3.5" transform="rotate(-18 80 14)"/><ellipse cx="120" cy="16" rx="9" ry="3.5" transform="rotate(14 120 16)"/><ellipse cx="220" cy="16" rx="9" ry="3.5" transform="rotate(-14 220 16)"/><ellipse cx="260" cy="14" rx="9" ry="3.5" transform="rotate(18 260 14)"/></g><circle cx="170" cy="20" r="10" fill="#A82738"/><circle cx="152" cy="22" r="7" fill="#C9505E"/><circle cx="188" cy="22" r="7" fill="#C9505E"/><circle cx="170" cy="20" r="4" fill="#8E1B2A"/></svg>
+        <section class="sec">
+      <h2>RSVP</h2>
+      <p class="lead">Kindly reply by 28 February 2027</p>
+      <span class="btn solid" aria-disabled="true">Confirm your presence · link coming soon</span>
+    </section>
+
+<svg class="garland d7x" viewBox="0 0 340 40" aria-hidden="true"><path d="M20 22 Q90 6 170 20 Q250 6 320 22" stroke="#7E9A72" stroke-width="1.4" fill="none"/><g fill="#7E9A72"><ellipse cx="80" cy="14" rx="9" ry="3.5" transform="rotate(-18 80 14)"/><ellipse cx="120" cy="16" rx="9" ry="3.5" transform="rotate(14 120 16)"/><ellipse cx="220" cy="16" rx="9" ry="3.5" transform="rotate(-14 220 16)"/><ellipse cx="260" cy="14" rx="9" ry="3.5" transform="rotate(18 260 14)"/></g><circle cx="170" cy="20" r="10" fill="#A82738"/><circle cx="152" cy="22" r="7" fill="#C9505E"/><circle cx="188" cy="22" r="7" fill="#C9505E"/><circle cx="170" cy="20" r="4" fill="#8E1B2A"/></svg>
+        <section class="sec">
+      <h2>Dress code</h2>
+      <p class="lead">Formal</p>
+    </section>
+
+<svg class="garland d7x" viewBox="0 0 340 40" aria-hidden="true"><path d="M20 22 Q90 6 170 20 Q250 6 320 22" stroke="#7E9A72" stroke-width="1.4" fill="none"/><g fill="#7E9A72"><ellipse cx="80" cy="14" rx="9" ry="3.5" transform="rotate(-18 80 14)"/><ellipse cx="120" cy="16" rx="9" ry="3.5" transform="rotate(14 120 16)"/><ellipse cx="220" cy="16" rx="9" ry="3.5" transform="rotate(-14 220 16)"/><ellipse cx="260" cy="14" rx="9" ry="3.5" transform="rotate(18 260 14)"/></g><circle cx="170" cy="20" r="10" fill="#A82738"/><circle cx="152" cy="22" r="7" fill="#C9505E"/><circle cx="188" cy="22" r="7" fill="#C9505E"/><circle cx="170" cy="20" r="4" fill="#8E1B2A"/></svg>
+        <section class="sec">
+      <div class="rule"><i></i><b></b><i></i></div>
+      <p class="lead" style="font-style:italic">Your presence and duas will make our day complete.</p>
+      <div class="names" style="font-size:clamp(44px,12vw,60px)">Shaira &amp; Nahid</div>
+    </section>
+    <div class="design-tag" id="dtag"></div>
+  </main>
+  <audio id="music" src="music.mp3" loop preload="auto"></audio>
+</div>
+
+<!-- butterflies for design 5 -->
+<div id="flies" hidden></div>
+
+<script>
+// ---- motifs (alpana rosette) ----
+(function(){
+  const f=n=>n.toFixed(2), P=(r,a)=>[r*Math.cos(a),r*Math.sin(a)];
+  const petal=(r0,r1,a,w)=>{const p0=P(r0,a),p1=P(r1,a),rm=r0+(r1-r0)*.55,c1=P(rm,a+w),c2=P(rm,a-w);return `M${f(p0[0])},${f(p0[1])} Q${f(c1[0])},${f(c1[1])} ${f(p1[0])},${f(p1[1])} Q${f(c2[0])},${f(c2[1])} ${f(p0[0])},${f(p0[1])}`};
+  const circ=(cx,cy,r)=>`M${f(cx+r)},${f(cy)} A${f(r)},${f(r)} 0 1 1 ${f(cx-r)},${f(cy)} A${f(r)},${f(r)} 0 1 1 ${f(cx+r)},${f(cy)}`;
+  function rosette(R){const o=[];o.push([circ(0,0,R*.07),1]);o.push([circ(0,0,R*.12)]);
+    for(let i=0;i<8;i++){const a=i/8*Math.PI*2-Math.PI/2;o.push([petal(R*.13,R*.46,a,.34)])}
+    o.push([circ(0,0,R*.5)]);for(let i=0;i<16;i++){const a=(i+.5)/16*Math.PI*2-Math.PI/2;o.push([petal(R*.5,R*.76,a,.17)])}
+    for(let i=0;i<32;i++){const p=P(R*.83,i/32*Math.PI*2);o.push([circ(p[0],p[1],R*.014),1])}
+    let d="";for(let i=0;i<32;i++){const a0=i/32*Math.PI*2,a1=(i+1)/32*Math.PI*2,p0=P(R*.9,a0),p1=P(R*.9,a1),c=P(R,(a0+a1)/2);d+=(i?"":`M${f(p0[0])},${f(p0[1])}`)+` Q${f(c[0])},${f(c[1])} ${f(p1[0])},${f(p1[1])}`}
+    o.push([d]);return o}
+  document.querySelectorAll("[data-motif=rosette]").forEach(el=>{
+    const s=+el.dataset.size, st=el.dataset.stroke||"var(--gold)", sw=+el.dataset.sw||1.2, R=s/2-sw*2;
+    el.innerHTML=`<svg width="100%" height="100%" viewBox="${-s/2} ${-s/2} ${s} ${s}">${rosette(R).map(([d,fl])=>`<path d="${d}" fill="${fl?st:"none"}" stroke="${st}" stroke-width="${sw}" stroke-linecap="round"/>`).join("")}</svg>`;
+  });
+  // indigo nakshi pattern for the gate-fold doors
+  document.querySelectorAll("[data-pattern=indigo]").forEach(el=>{
+    let h="";const cols=2,rows=4;
+    for(let r=0;r<rows;r++)for(let c=0;c<cols;c++){
+      const x=(c+.5)/cols*100,y=(r+.5)/rows*100,s=(r+c)%2?54:70;
+      const ps=rosette(s/2).map(([d,fl])=>`<path d="${d}" fill="${fl?"#23396B":"none"}" stroke="#23396B" stroke-width="1" opacity=".75"/>`).join("");
+      h+=`<svg style="position:absolute;left:calc(${x}% - ${s/2}px);top:calc(${y}% - ${s/2}px)" width="${s}" height="${s}" viewBox="${-s/2} ${-s/2} ${s} ${s}">${ps}</svg>`;
+    }
+    // running-stitch (kantha) lines
+    h+=`<svg style="position:absolute;inset:0" width="100%" height="100%"><rect x="2" y="2" width="calc(100% - 4px)" height="calc(100% - 4px)" fill="none" stroke="#23396B" stroke-width="1.4" stroke-dasharray="6 5" opacity=".6"/></svg>`;
+    el.innerHTML=h;
+  });
+})();
+
+// ---- butterflies ----
+(function(){
+  const box=document.getElementById("flies"); let h="";
+  const paths=[[-200,-380,-20],[190,-360,25],[-170,330,-40],[210,300,35],[-60,-480,-5],[80,460,10],[-260,60,-30],[260,-60,30],[-120,-200,-15],[140,160,20]];
+  paths.forEach((p,i)=>{h+=`<div class="fly" style="--x:${p[0]}px;--y:${p[1]}px;--r:${p[2]}deg;animation-delay:${i*0.08}s"><svg viewBox="0 0 100 80"><g class="w"><path d="M50 40 C30 5 5 10 10 30 C14 45 35 45 50 40 C35 50 20 72 34 74 C44 75 49 58 50 40 C51 58 56 75 66 74 C80 72 65 50 50 40 C65 45 86 45 90 30 C95 10 70 5 50 40Z" fill="${i%2?"#B8913F":"#F0D78E"}" stroke="#6E5220" stroke-width="1.6"/></g></svg></div>`});
+  box.innerHTML=h;
+})();
+
+// ---- app ----
+const $=s=>document.querySelector(s);
+const picker=$("#picker"), invite=$("#invite"), opener=$("#opener"), music=$("#music"), muteBtn=$("#mute"), flies=$("#flies");
+const NAMES={1:"Royal Maroon",2:"Indigo Nakshi",3:"Emerald Palace",4:"Fine Line",5:"Golden Butterflies",6:"Red & Gold Palace",7:"Red Envelope"};
+const DUR={1:3300,2:2700,3:3300,4:3800,5:2600,6:3300,7:2500};
+let cur=null, timer=null, wantMusic=true, fromPicker=false;
+
+function route(){
+  const h=location.hash||"";const m=h.match(/^#d([1-7])$/)||(h===""||h==="#"?[null,"6"]:null);
+  clearTimeout(timer);
+  try{music.pause();music.currentTime=0}catch(e){}
+  if(!m){fromPicker=true;cur=null;document.body.removeAttribute("data-d");invite.hidden=true;picker.hidden=false;flies.hidden=true;window.scrollTo(0,0);return}
+  cur=+m[1];document.body.dataset.d=cur;picker.hidden=true;invite.hidden=false;
+  invite.className="closed";opener.classList.remove("opened","done");
+  flies.hidden=cur!==5;flies.classList.remove("opened");
+  invite.scrollTop=0;setTimeout(label,0);$("#dtag").textContent=fromPicker?"Design "+cur+" · "+NAMES[cur]:"";$("#back").hidden=!fromPicker;
+}
+function openInvite(){
+  if(!cur||opener.classList.contains("opened"))return;
+  opener.classList.add("opened");label();
+  if(cur===5)flies.classList.add("opened");
+  if(wantMusic){try{const p=music.play();if(p&&p.catch)p.catch(()=>{})}catch(e){}}
+  timer=setTimeout(()=>{opener.classList.add("done");label();invite.classList.remove("closed");invite.classList.add("scroll")},DUR[cur]);
+}
+document.querySelectorAll("[data-tap]").forEach(el=>el.addEventListener("click",openInvite));
+opener.addEventListener("click",e=>{if(e.target===opener)openInvite()});
+document.querySelectorAll("[data-go]").forEach(b=>b.addEventListener("click",()=>{fromPicker=true;location.hash="d"+b.dataset.go}));
+$("#back").addEventListener("click",()=>{location.hash="all"});
+function playMusic(){try{const p=music.play();if(p&&p.catch)p.catch(()=>{})}catch(e){}}
+function label(){const pb=$("#pmusic");if(pb)pb.textContent=music.paused?"▶ Play the music":"❚❚ Pause the music";
+  muteBtn.textContent=music.paused?"♪":"❚❚";muteBtn.setAttribute("aria-label",music.paused?"Play music":"Pause music");muteBtn.hidden=!opener.classList.contains("opened")}
+music.addEventListener("play",label);music.addEventListener("pause",label);
+muteBtn.addEventListener("click",()=>{if(!opener.classList.contains("opened")){wantMusic=!wantMusic;label();return}
+  if(music.paused){wantMusic=true;playMusic()}else{wantMusic=false;music.pause()}});
+$("#pmusic").addEventListener("click",()=>{if(music.paused)playMusic();else music.pause()});
+window.addEventListener("hashchange",route);
+route();
+
+
+// printed card lightbox
+const lb=$("#lb"),lbimg=$("#lbimg"),lbcap=$("#lbcap"),cardBtns=[...document.querySelectorAll("[data-card]")];let ci=0;
+function showCard(i){ci=(i+cardBtns.length)%cardBtns.length;const b=cardBtns[ci];lbimg.src=b.querySelector("img").src;lbimg.alt=b.querySelector("img").alt;lbcap.textContent=b.querySelector("b").textContent;lb.hidden=false}
+cardBtns.forEach((b,i)=>b.addEventListener("click",()=>showCard(i)));
+$("#lbx").addEventListener("click",()=>{lb.hidden=true});$("#lbp").addEventListener("click",()=>showCard(ci-1));$("#lbn").addEventListener("click",()=>showCard(ci+1));
+lb.addEventListener("click",e=>{if(e.target===lb)lb.hidden=true});
+document.addEventListener("keydown",e=>{if(lb.hidden)return;if(e.key==="Escape")lb.hidden=true;if(e.key==="ArrowRight")showCard(ci+1);if(e.key==="ArrowLeft")showCard(ci-1)});
+
+// countdown to 4:30 pm AEDT, Friday 26 March 2027
+const target=Date.parse("2027-03-26T16:30:00+11:00");
+function tick(){let ms=Math.max(0,target-Date.now());const d=Math.floor(ms/864e5);ms-=d*864e5;const h=Math.floor(ms/36e5);ms-=h*36e5;const m=Math.floor(ms/6e4);ms-=m*6e4;const s=Math.floor(ms/1e3);
+  $("#cd-d").textContent=d;$("#cd-h").textContent=String(h).padStart(2,"0");$("#cd-m").textContent=String(m).padStart(2,"0");$("#cd-s").textContent=String(s).padStart(2,"0")}
+tick();setInterval(tick,1000);
+</script>
+
+</body></html>
